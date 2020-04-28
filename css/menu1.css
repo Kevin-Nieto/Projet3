@@ -1,0 +1,94 @@
+@media all and (max-width: 1024px) /* Responsive */
+{
+	#block
+	{
+		display: flex;
+		margin: auto;
+		
+		
+	}
+	
+}
+#block
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 360px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	width: 750px;
+	background-color: #FCDFDB;
+	box-shadow: 1px 1px 12px #555;
+	
+}
+i
+{
+	font-size: 3.5em;
+	color: #F15F62;
+}
+.menu
+{
+	margin-top: 55px;
+	margin-bottom: 45px;
+}
+.menu h2
+{
+	position: absolute;
+	background-color: rgb(252 223 219);
+	width: 230px;
+	margin-top: -14px;
+	margin-left: 260px;
+
+}
+.sousmenu 
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin-left: 75px;
+	margin-top: 90px;
+}
+.sousmenu .prix
+{
+	margin-left: 165px;
+}
+footer
+{
+	display: flex;
+	margin-top: 40px;
+	justify-content: center;
+	margin-left: -15px;
+}
+footer i
+{
+	position: absolute;
+	margin-left: -30px;
+}
+
+hr /* Lignes des menus */
+{
+	display: flex;
+	position: absolute;
+	margin-top: -2px;
+	
+}
+.ligne hr /* """" */
+{
+	display: flex;
+	position: absolute;
+	margin-left: 505px;
+}
+h2 
+{
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
+
+h2:hover 
+{
+  background-size: 100% 100%;
+}
