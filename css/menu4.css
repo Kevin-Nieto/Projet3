@@ -1,0 +1,144 @@
+@media all and (max-width: 1024px) /* Responsive */
+{
+	#block
+	{
+		display: flex;
+		margin: auto;
+		font-size: 1.8em;
+		
+	}
+	
+}
+
+#block /* Block principal */
+{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 340px 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	width: 750px;
+	height: 970px;
+	background-color: white;
+	box-shadow: 1px 1px 12px #555;
+	font-family: "Comic Sans MS",Georgia, "Arial Black", Arial, Verdana, sans-serif;
+	font-size: 1em;
+}
+.titre
+{
+	font-size: 1.5em;
+    background: linear-gradient(to right, #3d923a, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu1
+{
+	margin: 55px 20px 45px;
+	border-bottom: 2px solid black;
+	border-bottom-color: #3d923a;
+}
+.menu2
+{
+	margin: 55px 20px 45px;
+	border-bottom: 2px solid black;
+	border-bottom-color: #3d923a;
+}
+.menu3
+{
+	margin: 55px 20px 45px;
+	border-bottom: 2px solid black;
+	border-bottom-color: #3d923a;
+}
+.menu1 h6 /* Titre menu */
+{
+	position: absolute;
+	font-size: 1.5em;
+	background-color: white;
+	color: #000000;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 175px;
+
+}
+.menu2 h6 
+{
+	position: absolute;
+	font-size: 1.5em;
+	background-color: white;
+	color: #000000;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 175px;
+
+}
+.menu3 h6
+{
+	position: absolute;
+	font-size: 1.5em;
+	background-color: white;
+	color: #000000;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 175px;
+
+}
+.sousmenu /* Plats des menus */
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	width: 660px;
+	margin-left: 105px;
+	margin-top: 80px;
+	color: #000000;
+}
+.sousmenu2 
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	width: 690px;
+	margin-left: 105px;
+	margin-top: 80px;
+	color: #000000;
+}
+.sousmenu3 /* Plats des menus */
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	width: 875px;
+	margin-left: 105px;
+	margin-top: 80px;
+	color: #000000;
+}
+.sousmenu .prix
+{
+	margin-left: 115px;
+}
+.sousmenu2 .prix
+{
+	margin-left: 35px;
+}
+.sousmenu3 .prix
+{
+	margin-left: 50px;
+}
+.plats3
+{
+	color: #000000;
+}
+
+h6 /* Animation soulignement */
+{
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(141, 213, 101, 0.5) 0%, rgba(141, 213, 101, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
+
+h6:hover 
+{
+  background-size: 100% 100%;
+}

@@ -1,0 +1,125 @@
+@media all and (max-width: 1024px) /* Responsive */
+{
+	#block
+	{
+		display: flex;
+		
+	}
+	
+}
+
+#block /* Block principal */
+{
+	display: flex;
+	flex-direction: column;
+	margin: 40px 340px 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	width: 750px;
+	height: 820px;
+	background-color: #FFF5FE;
+	box-shadow: 1px 1px 12px #555;
+	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
+	font-size: 1em;
+}
+.titre
+{
+	font-size: 1.4em;
+    background: linear-gradient(to left, #C67412, #A56799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu1
+{
+	margin-top: 55px;
+	margin-bottom: 45px;
+	border-bottom: 2px solid #C67412;
+}
+.menu2
+{
+	margin-top: 55px;
+	margin-bottom: 45px;
+	border-bottom: 2px solid #A56799;
+}
+.menu3
+{
+	margin-top: 55px;
+	margin-bottom: 45px;
+	border-bottom: 2px solid #6E4CCC;
+}
+.menu1 h2 /* Titre menu */
+{
+	position: absolute;
+	background-color: #FFF5FE;
+	color: #C67412;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 200px;
+
+}
+.menu2 h2 
+{
+	position: absolute;
+	background-color: #FFF5FE;
+	color: #A56799;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 200px;
+
+}
+.menu3 h2
+{
+	position: absolute;
+	background-color: #FFF5FE;
+	color: #6E4CCC;
+	width: 350px;
+	margin-top: -15px;
+	margin-left: 200px;
+
+}
+.sousmenu /* Plats des menus */
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin-left: 125px;
+	margin-top: 60px;
+	color: #C67412;
+}
+.sousmenu2 
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin-left: 125px;
+	margin-top: 60px;
+	color: #A56799;
+}
+.sousmenu .prix
+{
+	margin-left: 170px;
+	font-weight: bold;
+}
+.sousmenu2 .prix
+{
+	margin-left: 35px;
+	font-weight: bold;
+}
+.plats3
+{
+	color: #6E4CCC;
+}
+
+h2 /* Animation soulignement */
+{
+  text-decoration: none;
+  background: linear-gradient(to top, rgba(255, 128, 0, 0.5) 0%, rgba(255, 128, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+  transition: background-size .5s;
+}
+
+h2:hover 
+{
+  background-size: 100% 100%;
+}
