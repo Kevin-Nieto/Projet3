@@ -1,0 +1,192 @@
+#block /* Block principal */
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin: 13%;
+	margin-top: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #FCDFDB;
+	box-shadow: 1px 1px 12px #555;
+	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
+}
+i /* Icone Musique */
+{
+	font-size: 3.5em;
+	color: #F15F62;
+}
+h1
+{
+	margin-left: 20px;
+}
+.menu 
+{
+	margin-top: 55px;
+	margin-bottom: 45px;
+	border-bottom: 2px solid black;
+}
+.menu h2 /* Titre menu */
+{
+
+	position: absolute;
+	justify-content: center;
+	background-color: #FCDFDB;
+	width: 20%;
+	margin-top: -15px;
+	margin-left: 14%;
+	padding-bottom: 3px;
+}
+.sousmenu /* Plats des menus */
+{
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin-left: 75px;
+	margin-top: 80px;
+}
+.sousmenu .prix
+{
+	margin-left: 165px;
+	font-weight: bold;
+}
+footer
+{
+	display: flex;
+	margin-top: 40px;
+	justify-content: center;
+	margin-left: -15px;
+}
+footer i
+{
+	position: absolute;
+	margin-left: -30px;
+}
+
+.menu h2:after /* Animation soulignement */
+{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+  
+.menu h2:hover:after 
+{
+    width: 100%;
+    background: #F15C61;
+}
+@media all and (max-width: 429px) /* Responsive Mobile*/
+{
+	#block
+	{
+		display: flex;
+		font-size: 45%;
+		margin: 5%
+	}
+	.menu h2
+	{
+		padding-top: 8px;
+		width: 110px;
+		margin-left: 55px;
+	}
+	.sousmenu
+	{
+		margin: 8%;
+	}
+	.sousmenu .plats
+	{
+		display: flex;
+		position: absolute;
+		margin-left: -40px;
+	}
+	.sousmenu .prix
+	{
+		display: flex;
+		margin-left: 200px;
+	}
+	figure i, h1
+	{
+		margin-left: 0px;
+	}
+	h2:after
+	{
+		height: 1px;
+	}
+	footer
+	{
+		margin-top: 45px;
+	}	
+}
+@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
+{
+	#block
+	{
+		display: flex;
+		font-size: 75%;
+	}
+	.menu h2
+	{
+		display: flex;
+		justify-content: center;
+		margin-left: 17%;
+		width: 24%;
+	}
+	.sousmenu .prix
+	{
+		margin-left: 50px;
+	}
+	.sousmenu
+	{
+		margin-left: 40px;
+	}
+}
+@media all and (min-width: 801px) and (max-width: 1024px) /* Responsive */
+{
+	#block
+	{
+		display: flex;
+		font-size: 85%;
+	}
+	.menu h2
+	{
+		display: flex;
+		justify-content: center;
+		margin-left: 230px;
+	}
+	
+}
+
+@media all and (min-width: 1400px) and (max-width: 1500px)
+{
+	.menu h2
+	{
+		margin-left: 220px;
+	}
+}
+@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
+{
+	#block
+	{
+		font-size: 180%;
+		margin: 5%
+	}
+	figure i
+	{
+		margin-left: -80px;
+	}
+	header figure
+	{
+		margin-left: 120px;
+	}
+	.menu h2
+	{
+		margin-left: 300px;
+	}
+}
