@@ -1,77 +1,57 @@
-@media all and (max-width: 1024px) /* Responsive */
-{
-	#block
-	{
-		width: 133%;
-		height:140%;
-		font-size: 140%;
-	}
-	.bannière h2
-	{
-		margin-left: -10px;
-	}
-	section .bannière
-	{
-		display: flex;
-		margin-right: 370px;
-		margin-left: 370px;
-	}
-	.menu1 .sousmenu2
-	{
-		display: flex;
-		margin-top: -662px;
-		margin-left: 525px;
-	}
-	.menu1 .sousmenu1
-	{
-		margin-left: -30px;
-	}
-	
-}
 #block /* Block principal du site */
 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	align-items: center;
 }
-.element1 /* En-tête du site */
+header /* En-tête du site */
 {
 	display: flex;
-	justify-content: center;
-	min-width: 100%;
 	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
 	background-color: rgb(87,156,135);
-	margin: -8px -8px 60px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgb(253,203,70);
-	font-size: 1.8em;
+	margin: -1%;
+	width: 101%;
+}
+header h1
+{
+	margin-left: 45%;
+}
+.menu1
+{
+
 }
 .menu1 figure /* Menus du site */
 {
 	display: flex;
 	justify-content: space-between;
 	height: 566px;
-	width: 400px;
 	overflow: hidden;
 	box-shadow: 1px 1px 12px #555;
 	margin-bottom: 50px;
-	margin-top: 45px;
-	margin-left: 200px;
+	margin-top: 75px;
+
 }
 .sousmenu1
 {
 	display: flex;
-	margin-left: 35px;	
+	margin-left: -270px;
+	margin-bottom: -60px;	
 }
 .sousmenu2
 {
 	display: flex;
 	position: absolute;
-	margin-top: -662px;
-	margin-left: 670px;
+	margin-top: -631px;
+	margin-left: 200px;
 }
-
+section
+{
+	width: 400px;
+}
 
 img /* """" */
 {
@@ -98,8 +78,8 @@ text-decoration:none;
     border-radius: 1rem;
     background-color: rgb(87,156,135);
     color: rgb(253,203,70);
-    margin: 110px 500px 130px;
-    font-size: 1.5em;
+    margin-top: 70px;
+    margin-bottom: 85px;
 }
 .bannière h2:after /* Animation des ... */
 {
@@ -131,19 +111,17 @@ footer /* Bas de page */
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: rgb(87,156,135);
-	font-size: 1.2em;
-	width: 100%;	
+	background-color: rgb(87,156,135);	
 	color: rgb(253,203,70);
 	position: fixed;
     bottom: 0;
-    margin: 0px -8px -8px;
+    width: 100%;
 }
 footer h3
 {
 	display: flex;
 	padding-left: 20px;
-	padding-right: 20px;
+	padding-right: 40px;
 	color: rgb(253,203,70);
 }
 footer h3:hover 
@@ -167,4 +145,133 @@ footer h3:hover
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media all and (max-width: 429px) /* Responsive Mobile*/
+{
+	#block
+	{
+		display: flex;
+		font-size: 100%;
+		width: 60%;
+	}
+	.sousmenu1
+	{
+		display: flex;
+		margin: -5%;
+		margin-top: 33px;
+		margin-bottom: -90px;
+	}
+	.sousmenu2
+	{
+		display: flex;
+		margin-top: 33px;
+		margin-left: 150px;
+	}
+	header
+	{
+		display: flex;
+		margin: -5%;
+		margin-left: -23px;
+		width: 250%;
+	}
+	header h1
+	{
+		display: flex;
+		margin-left: 51%;
+	}
+	.menu1 figure
+	{
+		display: flex;
+		height: 175px;
+		width: 120px;
+		margin: 0px -50% 165px;
+		margin-left: -95px;
+		margin-bottom: 90px;
+	}
+	img
+	{
+		width: 125px;
+	}
+	section
+	{
+		width: 10%;
+	}
+	.menu1
+	{
+		display: flex;
+		margin-left: 190%
+	}
+	.bannière
+	{
+		display: flex;
+		width: 240px;
+		font-size: 70%;
+		margin-left: -42px;
+		margin-bottom: 90px;
+		margin-top: 25px;
+	}
+	footer
+	{
+		margin-left: 65px;
+		width: 110%;
+		font-size: 55%
+		
+	}
+	footer h3
+	{
+		padding-left: 55px;
+		
+	}
+}
+@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
+{
+	header
+	{
+		width: 127%;
+	}
+	header h1
+	{
+		margin-left: 47%;
+	}
+	.sousmenu1
+	{
+		margin-left: -185px;
+	}
+	.sousmenu2
+	{
+		margin-top: -550px;
+		margin-left: 250px;
+	}
+	img
+	{
+		max-width: 345px;
+	}
+	.menu1 figure
+	{
+		height: 485px;
+	}
+	.bannière
+	{
+		margin-left: 50px;
+	}
+	footer
+	{
+		width: 111%;
+	}
+	footer h3
+	{
+		padding-left: 120px;
+	}
+}
+@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
+{
+	#block
+	{
+		font-size: 220%;
+	}
+	.bannière
+	{
+		width: 140%;
+		margin-left: -75px;
+	}
 }

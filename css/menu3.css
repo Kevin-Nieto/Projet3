@@ -1,27 +1,16 @@
-@media all and (max-width: 1024px) /* Responsive */
-{
-	#block
-	{
-		display: flex;
-		
-	}
-	
-}
-
 #block /* Block principal */
 {
 	display: flex;
 	flex-direction: column;
-	margin: 40px 340px 40px;
+	text-align: center;
+	align-items: center;
+	margin: 13%;
+	margin-top: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	text-align: center;
-	width: 750px;
-	height: 930px;
 	background-color: #edefef;
 	box-shadow: 1px 1px 12px #555;
-	font-family: "Comic Sans MS",Georgia, "Arial Black", Arial, Verdana, sans-serif;
-	font-size: 1em;
+	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
 }
 .titre
 {
@@ -54,7 +43,7 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 180px;
+	margin-left: 70px;
 	font-weight: normal;
 }
 .menu2 h6 
@@ -65,7 +54,7 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 180px;
+	margin-left: 70px;
 	font-weight: normal;
 }
 .menu3 h6
@@ -76,7 +65,7 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 180px;
+	margin-left: 70px;
 	font-weight: normal;
 }
 .sousmenu /* Plats des menus */
@@ -84,8 +73,7 @@
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	width: 660px;
-	margin-left: 105px;
+	margin-left: 30px;
 	margin-top: 60px;
 	color: #000000;
 }
@@ -94,7 +82,7 @@
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	margin-left: 105px;
+	margin-left: 30px;
 	margin-top: 60px;
 	color: #000000;
 }
@@ -103,36 +91,103 @@
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	width: 660px;
-	margin-left: 105px;
+	margin-left: 30px;
 	margin-top: 60px;
 	color: #000000;
 }
 .sousmenu .prix
 {
-	margin-left: 80px;
+	margin-left: 20px;
 }
 .sousmenu2 .prix
 {
-	margin-left: 130px;
+	margin-left: 80px;
 }
 .sousmenu3 .prix
 {
-	margin-left: 335px;
+	margin-left: 265px;
 }
 .plats3
 {
 	color: #000000;
 }
 
-h6 /* Animation soulignement */
+h6:after /* Animation soulignement */
 {
-  text-decoration: none;
-  background: linear-gradient(to top, rgba(6, 112, 243, 0.5) 0%, rgba(6, 112, 243, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
-  transition: background-size .5s;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
-
-h6:hover 
+  
+h6:hover:after 
 {
-  background-size: 100% 100%;
+    width: 100%;
+    background: #0670F3;
+}
+@media all and (max-width: 429px) /* Responsive Mobile*/
+{
+	#block
+	{
+		display: flex;
+		font-size: 50%;
+		margin: 5%
+	}
+	.menu1 h6, .menu2 h6, .menu3 h6
+	{
+		padding-top: 8px;
+		width: 165px;
+		margin-left: 35px;
+	}
+	.sousmenu .plats1, .sousmenu2 .plats2, .sousmenu3 .plats3
+	{
+		display: flex;
+		position: absolute;
+		margin-left: -10px;
+		margin-top: -25px;
+	}
+	.sousmenu .prix, .sousmenu2 .prix, .sousmenu3 .prix
+	{
+		display: flex;
+		margin-left: 225px;
+		margin-top: -25px;
+	}
+	h6:after
+	{
+		height: 1px;
+	}		
+}
+@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
+{
+	#block
+	{
+		font-size: 180%;
+		margin: 5%
+	}
+	.menu1 h6, .menu2 h6, .menu3 h6
+	{
+		margin-left: 165px;
+		width: 600px;
+	}
+	.sousmenu .prix
+	{
+		margin-left: 60px;
+	}
+	.sousmenu2 .prix
+	{
+		margin-left: 170px;
+	}
+	.sousmenu3 .prix
+	{
+		margin-left: 500px;
+	}
+	.sousmenu, .sousmenu2, .sousmenu3
+	{
+		margin-top: 130px;
+	}
 }
