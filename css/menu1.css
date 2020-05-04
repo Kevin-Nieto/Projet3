@@ -87,7 +87,7 @@ footer i
 	#block
 	{
 		display: flex;
-		font-size: 50%;
+		font-size: 47%;
 		margin: 5%
 	}
 	.menu h2
@@ -111,13 +111,23 @@ footer i
 		display: flex;
 		margin-left: 200px;
 	}
-	figure i, h1
+	figure i  h1
 	{
 		margin-left: 0px;
+		margin-top: 20px;
 	}
 	h2:after
 	{
 		height: 1px;
+	}
+	footer
+	{
+		margin-top: 45px;
+		margin-left: -40px;
+	}
+	footer i
+	{
+		margin-left: 10px;
 	}	
 }
 @media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
