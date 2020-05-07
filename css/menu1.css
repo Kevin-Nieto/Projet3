@@ -90,11 +90,17 @@ footer i
 		font-size: 50%;
 		margin: 0%
 	}
+	.menu
+	{
+		margin-top: 43px;
+		margin-bottom: 35px;
+		width: 300px;
+	}
 	.menu h2
 	{
 		padding-top: 8px;
 		width: 110px;
-		margin-left: 55px;
+		margin-left: 95px;
 	}
 	.sousmenu
 	{
@@ -104,16 +110,16 @@ footer i
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -40px;
+		margin-left: -20px;
 	}
 	.sousmenu .prix
 	{
 		display: flex;
-		margin-left: 200px;
+		margin-left: 245px;
 	}
 	figure i  h1
 	{
-		margin-left: 0px;
+		margin-left: 20px;
 		margin-top: 20px;
 	}
 	h2:after
@@ -122,12 +128,20 @@ footer i
 	}
 	footer
 	{
-		margin-top: 45px;
+		margin-top: 50px;
 		margin-left: -40px;
 	}
 	footer i
 	{
-		margin-left: 10px;
+		margin-left: 5%;
+	}
+	header h1
+	{
+		margin-left: 0px;
+	}
+	header i
+	{
+		margin-left: -3px;
 	}	
 }
 @media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
