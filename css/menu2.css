@@ -12,6 +12,10 @@
 	box-shadow: 1px 1px 12px #555;
 	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
 }
+header
+	{
+		display: inline-block;
+	}
 .titre
 {
 	font-size: 1.4em;
@@ -23,19 +27,16 @@
 .menu1
 {
 	margin-top: 55px;
-	margin-bottom: 80px;
 	border-bottom: 2px solid #C67412;
 }
 .menu2
 {
 	margin-top: 55px;
-	margin-bottom: 80px;
 	border-bottom: 2px solid #A56799;
 }
 .menu3
 {
 	margin-top: 55px;
-	margin-bottom: 80px;
 	border-bottom: 2px solid #6E4CCC;
 }
 .menu1 h2 /* Titre menu */
@@ -176,6 +177,7 @@ h2:hover:after
 	.sousmenu, .sousmenu2
 	{
 		margin-left: 40px;
+		margin-top: 35px;
 	}
 }
 
