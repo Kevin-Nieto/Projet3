@@ -19,7 +19,7 @@ header
 .titre
 {
 	font-size: 1.4em;
-    background: linear-gradient(to left, #C67412, #A56799);
+    background: -webkit-linear-gradient(#C67412, #A56799);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -138,13 +138,13 @@ h2:hover:after
 		display: flex;
 		position: absolute;
 		margin-left: -68px;
-		margin-top: -45px;
+		margin-top: -25px;
 	}
 	.sousmenu .prix, .sousmenu2 .prix
 	{
 		display: flex;
 		margin-left: 200px;
-		margin-top: -47px;
+		margin-top: -27px;
 	}
 	h2:after
 	{
@@ -153,7 +153,7 @@ h2:hover:after
 	.menu1, .menu2, .menu3
 	{
 		width: 295px;
-		margin-top: 30px;
+		
 	}		
 }
 @media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/

@@ -15,7 +15,7 @@
 .titre
 {
 	font-size: 1.5em;
-    background: linear-gradient(to right, #3d923a, #beff7f);
+    background: -webkit-linear-gradient(#3d923a, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -139,26 +139,30 @@ h6:hover:after
 	{
 		display: flex;
 		font-size: 50%;
-		margin: 5%
+		margin: 0%
+	}
+	.menu1, .menu2, .menu3
+	{
+		width: 260px;
 	}
 	.menu1 h6, .menu2 h6, .menu3 h6
 	{
 		padding-top: 8px;
 		width: 165px;
-		margin-left: 35px;
+		margin-left: 47px;
 	}
 	.sousmenu .plats1, .sousmenu2 .plats2, .sousmenu3 .plats3
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -25px;
+		margin-left: -23px;
 		margin-top: -25px;
 	}
 	.sousmenu .prix, .sousmenu2 .prix, .sousmenu3 .prix
 	{
 		display: flex;
-		margin-left: 220px;
-		margin-top: -25px;
+		margin-left: 235px;
+		margin-top: -27px;
 	}
 	h6:after
 	{
