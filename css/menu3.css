@@ -16,10 +16,10 @@ header
 	{
 		display: inline-block;
 	}
-.titre
+.titre, span
 {
 	display: block;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	background: linear-gradient(#C67412, #A56799);
     background: -webkit-linear-gradient(#C67412, #A56799);
     -webkit-background-clip: text;

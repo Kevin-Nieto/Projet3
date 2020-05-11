@@ -12,19 +12,20 @@
 	box-shadow: 1px 1px 12px #555;
 	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
 }
-.titre
+.titre, span
 {
 	display: block;
-	font-size: 1.5em;
+	font-size: 1.8em;
     background: linear-gradient(#3d923a, #beff7f);
     background: -webkit-linear-gradient(#3d923a, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-top: 15px;
 }
 
 .menu1
 {
-	margin: 55px 20px 45px;
+	margin: 90px 20px 45px;
 	border-bottom: 2px solid black;
 	border-bottom-color: #3d923a;
 }
@@ -146,6 +147,10 @@ h6:hover:after
 	.menu1, .menu2, .menu3
 	{
 		width: 260px;
+	}
+	.menu1
+	{
+		margin-top: 50px;
 	}
 	.menu1 h6, .menu2 h6, .menu3 h6
 	{
