@@ -8,112 +8,100 @@
 	margin-top: 40px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #edefef;
+	background-color: #FFF5FE;
 	box-shadow: 1px 1px 12px #555;
 	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
 }
+header
+	{
+		display: inline-block;
+	}
 .titre
 {
-	font-size: 1.5em;
-    background: linear-gradient(#0228dd, #0889f1);
-    background: -webkit-linear-gradient(#0228dd, #0889f1);
+	font-size: 1.4em;
+    background: -webkit-linear-gradient(#C67412, #A56799);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .menu1
 {
-	margin: 55px 20px 45px;
-	border-bottom: 2px solid #0228dd;
+	margin-top: 55px;
+	border-bottom: 2px solid #C67412;
 }
 .menu2
 {
-	margin: 55px 20px 45px;
-	border-bottom: 2px solid #0670f3;
+	margin-top: 55px;
+	border-bottom: 2px solid #A56799;
 }
 .menu3
 {
-	margin: 55px 20px 45px;
-	border-bottom: 2px solid #0889f1;
+	margin-top: 55px;
+	border-bottom: 2px solid #6E4CCC;
 }
-.menu1 h6 /* Titre menu */
+.menu1 h2 /* Titre menu */
 {
 	position: absolute;
-	font-size: 1.5em;
-	background-color: #edefef;
-	color: #000000;
+	background-color: #FFF5FE;
+	color: #C67412;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 70px;
-	font-weight: normal;
+	margin-left: 120px;
+
 }
-.menu2 h6 
+.menu2 h2 
 {
 	position: absolute;
-	font-size: 1.5em;
-	background-color: #edefef;
-	color: #000000;
+	background-color: #FFF5FE;
+	color: #A56799;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 70px;
-	font-weight: normal;
+	margin-left: 120px;
+
 }
-.menu3 h6
+.menu3 h2
 {
 	position: absolute;
-	font-size: 1.5em;
-	background-color: #edefef;
-	color: #000000;
+	background-color: #FFF5FE;
+	color: #6E4CCC;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 70px;
-	font-weight: normal;
+	margin-left: 120px;
+
 }
 .sousmenu /* Plats des menus */
 {
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 70px;
 	margin-top: 60px;
-	color: #000000;
+	color: #C67412;
 }
 .sousmenu2 
 {
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	margin-left: 30px;
+	margin-left: 70px;
 	margin-top: 60px;
-	color: #000000;
-}
-.sousmenu3 /* Plats des menus */
-{
-	display: flex;
-	flex-direction: row;
-	text-align: left;
-	margin-left: 30px;
-	margin-top: 60px;
-	color: #000000;
+	color: #A56799;
 }
 .sousmenu .prix
 {
-	margin-left: 20px;
+	margin-left: 170px;
+	font-weight: bold;
 }
 .sousmenu2 .prix
 {
-	margin-left: 80px;
-}
-.sousmenu3 .prix
-{
-	margin-left: 265px;
+	margin-left: 35px;
+	font-weight: bold;
 }
 .plats3
 {
-	color: #000000;
+	color: #6E4CCC;
 }
-
-h6:after /* Animation soulignement */
+h2:after /* Animation soulignement */
 {
     content: '';
     display: block;
@@ -126,10 +114,10 @@ h6:after /* Animation soulignement */
     transition: width .5s ease, background-color .5s ease;
 }
   
-h6:hover:after 
+h2:hover:after 
 {
     width: 100%;
-    background: #0670F3;
+    background: #AA6AB2;
 }
 @media all and (max-width: 429px) /* Responsive Mobile*/
 {
@@ -139,34 +127,60 @@ h6:hover:after
 		font-size: 50%;
 		margin: 0%
 	}
-	.menu1, .menu2, .menu3
-	{
-		width: 260px;
-	}
-	.menu1 h6, .menu2 h6, .menu3 h6
+	.menu1 h2, .menu2 h2, .menu3 h2
 	{
 		padding-top: 8px;
 		width: 165px;
-		margin-left: 47px;
+		margin-left: 65px;
 	}
-	.sousmenu .plats1, .sousmenu2 .plats2, .sousmenu3 .plats3
+	.sousmenu .plats1, .sousmenu .plats3, .sousmenu2 .plats2
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -23px;
+		margin-left: -68px;
 		margin-top: -25px;
 	}
-	.sousmenu .prix, .sousmenu2 .prix, .sousmenu3 .prix
+	.sousmenu .prix, .sousmenu2 .prix
 	{
 		display: flex;
-		margin-left: 235px;
+		margin-left: 200px;
 		margin-top: -27px;
 	}
-	h6:after
+	h2:after
 	{
 		height: 1px;
+	}
+	.menu1, .menu2, .menu3
+	{
+		width: 295px;
+		
 	}		
 }
+@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
+{
+	#block
+	{
+		display: flex;
+		font-size: 75%;
+	}
+	.menu1 h2, .menu2 h2, .menu3 h2
+	{
+		display: flex;
+		justify-content: center;
+		margin-left: 11%;
+		width: 35%;
+	}
+	.sousmenu .prix
+	{
+		margin-left: 135px;
+	}
+	.sousmenu, .sousmenu2
+	{
+		margin-left: 40px;
+		margin-top: 35px;
+	}
+}
+
 @media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
 {
 	#block
@@ -174,24 +188,16 @@ h6:hover:after
 		font-size: 180%;
 		margin: 5%
 	}
-	.menu1 h6, .menu2 h6, .menu3 h6
+	.menu1 h2, .menu2 h2, .menu3 h2
 	{
-		margin-left: 165px;
+		margin-left: 190px;
 		width: 600px;
 	}
 	.sousmenu .prix
 	{
-		margin-left: 60px;
+		margin-left: 280px;
 	}
-	.sousmenu2 .prix
-	{
-		margin-left: 170px;
-	}
-	.sousmenu3 .prix
-	{
-		margin-left: 500px;
-	}
-	.sousmenu, .sousmenu2, .sousmenu3
+	.sousmenu, .sousmenu2
 	{
 		margin-top: 130px;
 	}

@@ -155,13 +155,13 @@ h6:hover:after
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -23px;
+		margin-left: -30px;
 		margin-top: -25px;
 	}
 	.sousmenu .prix, .sousmenu2 .prix, .sousmenu3 .prix
 	{
 		display: flex;
-		margin-left: 235px;
+		margin-left: 251px;
 		margin-top: -27px;
 	}
 	h6:after
