@@ -14,7 +14,9 @@
 }
 .titre
 {
+	display: block;
 	font-size: 1.5em;
+    background: linear-gradient(#3d923a, #beff7f);
     background: -webkit-linear-gradient(#3d923a, #beff7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
