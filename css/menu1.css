@@ -129,8 +129,8 @@ footer i
 	}
 	footer
 	{
-		margin-top: 10%;
-		margin-left: -40px;
+		margin-top: 0px;
+		margin-left: -50px;
 	}
 	footer i
 	{
@@ -144,6 +144,10 @@ footer i
 	{
 		margin-left: -3px;
 	}	
+	section
+	{
+		height: 440px;
+	}
 }
 @media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
 {
