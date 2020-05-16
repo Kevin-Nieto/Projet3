@@ -6,18 +6,135 @@ header /* En-tête du site */
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: rgb(253,203,70);
-	margin: -0.5%;
 	justify-content: center;
 }
-
-img /* """" */
+body
 {
-	max-width: 400px;
-	max-height: 600px;
+	margin: auto;
+	padding: auto;
+}
+.sousmenu1 a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FCDFDB;
+	align-items: center;
+	color: black;
+	width: 100%;
 	cursor: pointer;
 	transform: scale(1);
     transition-property: transform;
     transition-duration: 600ms;
+}
+i /* Icone Musique */
+{
+	font-size: 3.5em;
+	color: #F15F62;
+}
+figure h2 /* """" */
+{
+	font-size: 2.5em;
+}
+figure h3
+{
+	font-size: 1.6em;
+}
+.sousmenu2 a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	transform: scale(1);
+    transition-property: transform;
+    transition-duration: 600ms;
+}
+.sousmenu2 h3
+{
+	display: block;
+	font-size: 1.8em;
+    background: linear-gradient(#0228dd, #0889f1);
+    background: -webkit-linear-gradient(#0228dd, #0889f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+.sousmenu2 h2
+{
+	display: block;
+	background: linear-gradient(#0228dd, #0889f1);
+    background: -webkit-linear-gradient(#0228dd, #0889f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 25px;
+}
+.sousmenu3 a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #FFF5FE;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	transform: scale(1);
+    transition-property: transform;
+    transition-duration: 600ms;
+}
+.sousmenu3 h3
+{
+	display: block;
+	font-size: 1.8em;
+    background: linear-gradient(#C67412, #A56799);
+    background: -webkit-linear-gradient(#C67412, #A56799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+.sousmenu3 h2
+{
+	display: block;
+	background: linear-gradient(#C67412, #A56799);
+    background: -webkit-linear-gradient(#C67412, #A56799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 25px;
+}
+.sousmenu4 a
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: white;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+	transform: scale(1);
+    transition-property: transform;
+    transition-duration: 600ms;
+}
+.sousmenu4 h3
+{
+	display: block;
+	font-size: 1.8em;
+    background: linear-gradient(#3d923a, #beff7f);
+    background: -webkit-linear-gradient(#3d923a, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+.sousmenu4 h2
+{
+	display: block;
+	background: linear-gradient(#3d923a, #beff7f);
+    background: -webkit-linear-gradient(#3d923a, #beff7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 25px;
 }
 #block /* Block principal du site */
 {
@@ -27,7 +144,7 @@ img /* """" */
 	flex-direction: row;
 	margin: 3%;
 }
-#block img:hover /* Action au survol de la souris */
+#block a:hover /* Action au survol de la souris */
 {
 	transform: scale(1.3);
 	opacity: 0.8;
@@ -48,7 +165,7 @@ a:link /* Ne pas souligner les liens */
 {
 text-decoration:none;
 }
-section
+main
 {
 	display: flex;
 	align-items: center;
@@ -65,31 +182,39 @@ section
     margin-bottom: 140px;
     width: 25%;
 }
-.bannière h2:after /* Animation des ... */
+.bannière p
 {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  animation: ellipsis steps(4,end) 1100ms infinite;      
-  animation: ellipsis steps(4,end) 1100ms infinite;
-  content: "\2026"; 
-  width: 0px;
+	font-size: 1.4em;
+	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+/* loading dots */
+
+.loading:after 
+{
+  content: ' .';
+  animation: dots 1.4s steps(5, end) infinite;
 }
 
-@keyframes ellipsis 
+@keyframes dots 
 {
-  to 
-  {
-    width: 1.25em;    
-  }
-}
-
-@keyframes ellipsis 
-{
-  to 
-  {
-    width: 1.25em;    
-  }
+  0%, 20% {
+    color: rgba(0,0,0,0);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  40% {
+    color: rgb(253,203,70);
+    text-shadow:
+      .25em 0 0 rgba(0,0,0,0),
+      .5em 0 0 rgba(0,0,0,0);}
+  60% {
+    text-shadow:
+      .25em 0 0 rgb(253,203,70),
+      .5em 0 0 rgba(0,0,0,0);}
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 rgb(253,203,70),
+      .5em 0 0 rgb(253,203,70);}
 }
 footer /* Bas de page */
 {
@@ -100,13 +225,12 @@ footer /* Bas de page */
 	position: fixed;
     bottom: 0;
     width: 100%;
-    margin: -0.5%;
 
 }
 footer h3
 {
 	display: flex;
-	padding-left: 20px;
+	padding-left: 40px;
 	padding-right: 40px;
 	color: rgb(253,203,70);
 }
@@ -136,7 +260,7 @@ footer h3:hover
 {
 	header
 	{
-		margin: -2.5%;
+		font-size: 65%;
 	}
 	#block
 	{
@@ -155,24 +279,29 @@ footer h3:hover
 	.bannière
 	{
 		font-size: x-small;
-		width: 60%;
+		width: 125px;
 		margin-bottom: 80px;
 	}
-	img
+	.bannière p
 	{
-		width: 125px;
+		font-size: 1.2em;
 	}
-	footer
+	.sousmenu1, .sousmenu2, .sousmenu3, .sousmenu4
 	{
-		margin: -2.5%;
+		font-size: 40%;
+	}
+	footer h3
+	{
+		padding-left: 30px;
+		padding-right: 30px;
 		font-size: x-small;
 	}
-	section
+	main
 	{
 		height: 100%;
 	}
 }
-@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
+@media all and (min-width: 430px) and (max-width: 1000px) /* Responsive  Tablette*/
 {
 	#block
 	{
@@ -180,11 +309,7 @@ footer h3:hover
 	}
 	header
 	{
-		margin: -1%;
-	}
-	img
-	{
-		width: 165px;
+		font-size: 70%;
 	}
 	.menu1 figure
 	{
@@ -196,15 +321,21 @@ footer h3:hover
 		margin-top: 50px;
 		margin-bottom: 30px;
 	}
+	.sousmenu1, .sousmenu2, .sousmenu3, .sousmenu4
+	{
+		font-size: 50%;
+	}
 	.bannière
 	{
 		font-size: small;
-		width: 30%;
+		width: 200px;
 		margin-bottom: 70px;
 	}
-	footer
+	footer h3
 	{
-		margin: -1%;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: smaller;
 	}
 	
 }

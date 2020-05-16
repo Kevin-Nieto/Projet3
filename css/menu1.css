@@ -1,11 +1,34 @@
+header /* En-tête du site */
+{
+	display: flex;
+	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+	background-color: rgb(87,156,135);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: rgb(253,203,70);
+	justify-content: center;
+}
+body
+{
+	margin: auto;
+	padding: auto;
+}
+.nom
+{
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	font-family: "Arial Black", Arial, Verdana, sans-serif;
+}
 #block /* Block principal */
 {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	margin: 13%;
-	margin-top: 40px;
+	margin: 10%;
+	margin-top: 10px;
+	margin-bottom: 90px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background-color: #FCDFDB;
@@ -19,10 +42,12 @@ i /* Icone Musique */
 }
 h1
 {
-	margin-left: 20px;
+	
 }
 .menu 
 {
+	display: flex;
+	justify-content: center;
 	margin-top: 55px;
 	margin-bottom: 45px;
 	border-bottom: 2px solid black;
@@ -33,9 +58,8 @@ h1
 	position: absolute;
 	justify-content: center;
 	background-color: #FCDFDB;
-	width: 20%;
+	width: 250px;
 	margin-top: -15px;
-	margin-left: 14%;
 	padding-bottom: 3px;
 }
 .sousmenu /* Plats des menus */
@@ -51,14 +75,14 @@ h1
 	margin-left: 165px;
 	font-weight: bold;
 }
-footer
+.bas
 {
 	display: flex;
 	margin-top: 40px;
 	justify-content: center;
 	margin-left: -15px;
 }
-footer i
+.bas i
 {
 	position: absolute;
 	margin-left: -30px;
@@ -82,136 +106,142 @@ footer i
     width: 100%;
     background: #F15C61;
 }
-@media all and (max-width: 429px) /* Responsive Mobile*/
+a:link /* Ne pas souligner les liens */
 {
+text-decoration:none;
+}
+footer /* Bas de page */
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(87,156,135);	
+	color: rgb(253,203,70);
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+footer h3
+{
+	display: flex;
+	padding-left: 20px;
+	padding-right: 40px;
+	color: rgb(253,203,70);
+}
+footer h3:hover 
+{
+  /* Commencer l'annimation et la faire durer 1s */
+  animation: shake 1s;
+
+  /* Quand elle est finie, recommencer */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media all and (max-width: 549px) /* Responsive Mobile, Tablette*/
+{
+	body
+	{
+		font-size: 55%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+	}
 	#block
 	{
-		display: flex;
-		font-size: 50%;
-		margin: 0%
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 1%;
+		margin-bottom: 80px;
 	}
 	.menu
 	{
-		margin-top: 43px;
-		margin-bottom: 30px;
-		width: 300px;
-	}
-	.menu h2
-	{
-		padding-top: 8px;
-		width: 110px;
-		margin-left: 95px;
+		margin-top: 30px;
 	}
 	.sousmenu
 	{
-		margin: 8%;
-		margin-bottom: 45px;
+		margin-left: 0px;
+		margin-top: -15px;
 	}
-	.sousmenu .plats
-	{
-		display: flex;
-		position: absolute;
-		margin-left: -20px;
-	}
+	
 	.sousmenu .prix
 	{
-		display: flex;
-		margin-left: 245px;
+		margin-left: 30px;
 	}
-	figure i  h1
+	.bas
 	{
-		margin-left: 20px;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
-	h2:after
-	{
-		height: 1px;
-	}
-	footer
-	{
-		margin-top: 0px;
-		margin-left: -50px;
-	}
-	footer i
-	{
-		margin-left: 5%;
-	}
-	header h1
+	.bas i
 	{
 		margin-left: 0px;
 	}
-	header i
-	{
-		margin-left: -3px;
-	}	
-	section
-	{
-		height: 440px;
-	}
-}
-@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
-{
-	#block
-	{
-		display: flex;
-		font-size: 75%;
-	}
 	.menu h2
 	{
-		display: flex;
-		justify-content: center;
-		margin-left: 17%;
-		width: 24%;
+		width: 150px;
+		margin-top: -8px;
+		padding-bottom: 0px;
 	}
-	.sousmenu .prix
+}
+
+@media all and (min-width: 550px) and (max-width: 1023px) /* Responsive */
+{
+	
+	body
 	{
-		margin-left: 50px;
+		font-size: 55%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+	}
+	#block
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 10%;
+		margin-bottom: 80px;
+		margin-top: 25px;
+	}
+	.menu
+	{
+		margin-top: 30px;
 	}
 	.sousmenu
 	{
-		margin-left: 40px;
-	}
-}
-@media all and (min-width: 801px) and (max-width: 1024px) /* Responsive */
-{
-	#block
-	{
-		display: flex;
-		font-size: 85%;
-	}
-	.menu h2
-	{
-		display: flex;
-		justify-content: center;
-		margin-left: 230px;
+		margin-left: 0px;
+		margin-top: -15px;
 	}
 	
-}
-
-@media all and (min-width: 1400px) and (max-width: 1500px)
-{
-	.menu h2
+	.sousmenu .prix
 	{
-		margin-left: 220px;
+		margin-left: 30px;
 	}
-}
-@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
-{
-	#block
+	.bas
 	{
-		font-size: 180%;
-		margin: 5%
+		margin-top: 10px;
 	}
-	figure i
+	.bas i
 	{
-		margin-left: -80px;
-	}
-	header figure
-	{
-		margin-left: 120px;
+		margin-left: 0px;
 	}
 	.menu h2
 	{
-		margin-left: 300px;
+		width: 150px;
+		margin-top: -8px;
+		padding-bottom: 0px;
 	}
 }

@@ -1,3 +1,27 @@
+header /* En-tête du site */
+{
+	display: flex;
+	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+	background-color: rgb(87,156,135);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: rgb(253,203,70);
+	justify-content: center;
+}
+body
+{
+	margin: auto;
+	padding: auto;
+}
+.nom
+{
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	font-size: 1.2em;
+	font-family: "Arial Black", Arial, Verdana, sans-serif;
+	color: black;
+}
 #block /* Block principal */
 {
 	display: flex;
@@ -12,10 +36,6 @@
 	box-shadow: 1px 1px 12px #555;
 	font-family: Georgia, "Arial Black", Arial, Verdana, sans-serif;
 }
-header
-	{
-		display: inline-block;
-	}
 .titre, span
 {
 	display: block;
@@ -28,16 +48,22 @@ header
 
 .menu1
 {
+	display: flex;
+	justify-content: center;
 	margin-top: 55px;
 	border-bottom: 2px solid #C67412;
 }
 .menu2
 {
+	display: flex;
+	justify-content: center;
 	margin-top: 55px;
 	border-bottom: 2px solid #A56799;
 }
 .menu3
 {
+	display: flex;
+	justify-content: center;
 	margin-top: 55px;
 	border-bottom: 2px solid #6E4CCC;
 }
@@ -48,7 +74,6 @@ header
 	color: #C67412;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 120px;
 
 }
 .menu2 h2 
@@ -58,7 +83,6 @@ header
 	color: #A56799;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 120px;
 
 }
 .menu3 h2
@@ -68,7 +92,6 @@ header
 	color: #6E4CCC;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 120px;
 
 }
 .sousmenu /* Plats des menus */
@@ -76,7 +99,7 @@ header
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	margin-left: 70px;
+	margin-left: 30px;
 	margin-top: 60px;
 	color: #C67412;
 }
@@ -85,7 +108,7 @@ header
 	display: flex;
 	flex-direction: row;
 	text-align: left;
-	margin-left: 70px;
+	margin-left: 30px;
 	margin-top: 60px;
 	color: #A56799;
 }
@@ -121,31 +144,87 @@ h2:hover:after
     width: 100%;
     background: #AA6AB2;
 }
-@media all and (max-width: 429px) /* Responsive Mobile*/
+a:link /* Ne pas souligner les liens */
 {
+text-decoration:none;
+}
+footer /* Bas de page */
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(87,156,135);	
+	color: rgb(253,203,70);
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+footer h3
+{
+	display: flex;
+	padding-left: 20px;
+	padding-right: 40px;
+	color: rgb(253,203,70);
+}
+footer h3:hover 
+{
+  /* Commencer l'annimation et la faire durer 1s */
+  animation: shake 1s;
+
+  /* Quand elle est finie, recommencer */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media all and (max-width: 549px) /* Responsive Mobile*/
+{
+	body
+	{
+		font-size: 55%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+	}
+	.titre
+	{
+		margin-top: 10px;
+		margin-bottom: -20px;
+	}
 	#block
 	{
-		display: flex;
-		font-size: 50%;
-		margin: 0%
+		padding-top: 10px;
+		margin: 1%;
+		margin-bottom: 80px;
 	}
 	.menu1 h2, .menu2 h2, .menu3 h2
 	{
 		padding-top: 8px;
-		width: 165px;
-		margin-left: 65px;
+		width: 185px;
 	}
 	.sousmenu .plats1, .sousmenu .plats3, .sousmenu2 .plats2
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -68px;
+		margin-left: -50px;
 		margin-top: -25px;
 	}
 	.sousmenu .prix, .sousmenu2 .prix
 	{
 		display: flex;
-		margin-left: 200px;
+		margin-left: 210px;
 		margin-top: -27px;
 	}
 	h2:after
@@ -154,53 +233,38 @@ h2:hover:after
 	}
 	.menu1, .menu2, .menu3
 	{
-		width: 295px;
-		
-	}		
+		margin-top: 55px;
+	}	
+	.sousmenu, .sousmenu2
+	{
+		margin-bottom: -15px;
+	}	
 }
-@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
+@media all and (min-width: 550px) and (max-width: 1023px) /* Responsive */
 {
+	body
+	{
+		font-size: 65%;
+	}
 	#block
 	{
-		display: flex;
-		font-size: 75%;
+		margin: 10%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+		margin-bottom: -40px;
 	}
 	.menu1 h2, .menu2 h2, .menu3 h2
 	{
-		display: flex;
-		justify-content: center;
-		margin-left: 11%;
-		width: 35%;
+		width: 265px;
 	}
 	.sousmenu .prix
 	{
-		margin-left: 135px;
+		margin-left: 120px;
 	}
 	.sousmenu, .sousmenu2
 	{
-		margin-left: 40px;
 		margin-top: 35px;
-	}
-}
-
-@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
-{
-	#block
-	{
-		font-size: 180%;
-		margin: 5%
-	}
-	.menu1 h2, .menu2 h2, .menu3 h2
-	{
-		margin-left: 190px;
-		width: 600px;
-	}
-	.sousmenu .prix
-	{
-		margin-left: 280px;
-	}
-	.sousmenu, .sousmenu2
-	{
-		margin-top: 130px;
 	}
 }

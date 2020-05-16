@@ -1,3 +1,27 @@
+header /* En-tête du site */
+{
+	display: flex;
+	font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+	background-color: rgb(87,156,135);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: rgb(253,203,70);
+	justify-content: center;
+}
+body
+{
+	margin: auto;
+	padding: auto;
+}
+.nom
+{
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	font-size: 1.2em;
+	font-family: "Arial Black", Arial, Verdana, sans-serif;
+	color: black;
+}
 #block /* Block principal */
 {
 	display: flex;
@@ -25,19 +49,25 @@
 
 .menu1
 {
-	margin: 90px 20px 45px;
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
 	border-bottom: 2px solid black;
 	border-bottom-color: #3d923a;
 }
 .menu2
 {
-	margin: 55px 20px 45px;
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
 	border-bottom: 2px solid black;
 	border-bottom-color: #3d923a;
 }
 .menu3
 {
-	margin: 55px 20px 45px;
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
 	border-bottom: 2px solid black;
 	border-bottom-color: #3d923a;
 }
@@ -49,7 +79,6 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 95px;
 	font-weight: normal;
 }
 .menu2 h6 
@@ -60,7 +89,6 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 95px;
 	font-weight: normal;
 }
 .menu3 h6
@@ -71,7 +99,6 @@
 	color: #000000;
 	width: 350px;
 	margin-top: -15px;
-	margin-left: 95px;
 	font-weight: normal;
 }
 .sousmenu /* Plats des menus */
@@ -136,91 +163,124 @@ h6:hover:after
     width: 100%;
     background: #ACEF75;
 }
-@media all and (max-width: 429px) /* Responsive Mobile*/
+a:link /* Ne pas souligner les liens */
 {
+text-decoration:none;
+}
+footer /* Bas de page */
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(87,156,135);	
+	color: rgb(253,203,70);
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+footer h3
+{
+	display: flex;
+	padding-left: 20px;
+	padding-right: 40px;
+	color: rgb(253,203,70);
+}
+footer h3:hover 
+{
+  /* Commencer l'annimation et la faire durer 1s */
+  animation: shake 1s;
+
+  /* Quand elle est finie, recommencer */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media all and (max-width: 549px) /* Responsive Mobile*/
+{
+	body
+	{
+		font-size: 55%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+	}
+	.titre
+	{
+		margin-top: 10px;
+		margin-bottom: -20px;
+	}
 	#block
 	{
-		display: flex;
-		font-size: 50%;
-		margin: 0%
+		padding-top: 10px;
+		margin: 1%;
+		margin-bottom: 80px;
 	}
-	.menu1, .menu2, .menu3
-	{
-		width: 260px;
-	}
-	.menu1
-	{
-		margin-top: 50px;
-	}
+	
 	.menu1 h6, .menu2 h6, .menu3 h6
 	{
 		padding-top: 8px;
-		width: 165px;
-		margin-left: 47px;
+		width: 185px;
 	}
 	.sousmenu .plats1, .sousmenu2 .plats2, .sousmenu3 .plats3
 	{
 		display: flex;
 		position: absolute;
-		margin-left: -30px;
+		margin-left: -50px;
 		margin-top: -25px;
 	}
 	.sousmenu .prix, .sousmenu2 .prix, .sousmenu3 .prix
 	{
 		display: flex;
-		margin-left: 251px;
+		margin-left: 222px;
 		margin-top: -27px;
 	}
 	h6:after
 	{
 		height: 1px;
 	}	
-}
-@media all and (min-width: 430px) and (max-width: 800px) /* Responsive  Tablette*/
-{
-	#block
+	.menu1, .menu2, .menu3
 	{
-		margin: 8%;
-	}
-	.menu1 h6, .menu2 h6, .menu3 h6
-	{
-		margin-left: 80px;
-	}
-	.sousmenu .plats1, .sousmenu2 .plats2, .sousmenu3 .plats3
-	{
-		width: 490px;
-	}
-	.sousmenu .prix
-	{
-		margin-left: 10px;
-	}
-	.sousmenu2 .prix
-	{
-		margin-left: 10px;
-	}
-	.sousmenu3 .prix
-	{
-		margin-left: 10px;
-	}
-}
-@media all and (min-width: 2000px) and (max-width: 2600px) /* Responsive TV*/
-{
-	#block
-	{
-		font-size: 180%;
-		margin: 5%
-	}
-	.menu1 h6, .menu2 h6, .menu3 h6
-	{
-		margin-left: 165px;
-		width: 600px;
-	}
-	.sousmenu .prix
-	{
-		margin-left: 190px;
-	}
+		margin-top: 55px;
+	}	
 	.sousmenu, .sousmenu2, .sousmenu3
 	{
-		margin-top: 130px;
+		margin-bottom: -15px;
+	}	
+}
+@media all and (min-width: 550px) and (max-width: 1023px) /* Responsive  Tablette*/
+{
+	body
+	{
+		font-size: 65%;
+	}
+	#block
+	{
+		margin: 10%;
+	}
+	.nom
+	{
+		margin-top: 10px;
+		margin-bottom: -40px;
+	}
+	.menu1 h6, .menu2 h6, .menu3 h6
+	{
+		width: 265px;
+	}
+	.sousmenu .prix
+	{
+		margin-left: 85px;
 	}
 }
