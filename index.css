@@ -192,7 +192,7 @@ main
 .loading:after 
 {
   content: ' .';
-  animation: dots 1.4s steps(5, end) infinite;
+  -webkit-animation: dots 1.4s steps(5, end) infinite;
 }
 
 @keyframes dots 
